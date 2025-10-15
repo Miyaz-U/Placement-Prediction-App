@@ -2,7 +2,6 @@
 import streamlit as st
 import numpy as np
 import pickle
-import pandas as pd
 
 
 # Load Pre-trained Models & Scalers
@@ -113,4 +112,5 @@ if placement_pred == 1 and has_mba == "Yes":
 
 elif placement_pred == 1 and has_mba == "No":
     with col4:
+
         st.warning("💡 Salary prediction is available only for MBA students.")
